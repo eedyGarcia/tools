@@ -1,0 +1,60 @@
+<app-menu></app-menu>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-6 col-md-4 col-lg-3">
+            <div class="card rounded-10">
+                <div class="card-header bg-white">
+                    <h4 class="card-title">Rule of three</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6 my-2">
+                            <input type="number" class="form-control form-control-sm" id="rot_a" name="rot_a" #rot_a value="100">
+                        </div>
+                        <div class="col-6 my-2">
+                            <input type="number" class="form-control form-control-sm" id="rot_b" name="rot_b" #rot_b value="1000">
+                        </div>
+                        <div class="col-6 my-2">
+                            <input type="number" class="form-control form-control-sm" id="rot_c" name="rot_c" #rot_c value="12">
+                        </div>
+                        <div class="col-6 my-2 pt-2 text-center">
+                            {{ rot_d | number: '1.2-2' }}
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer bg-white">
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-sm btn-primary" type="button" (click)="rot(rot_a.value, rot_b.value, rot_c.value)">Execute</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+            <div class="card rounded-10">
+                <div class="card-header bg-white">
+                    <h4 class="card-title">Generate Password</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6 my-2">
+                            <div class="text-xs">Chars</div>
+                            <input type="number" class="form-control form-control-sm" id="pws_chars" name="pws_chars" #pws_chars value="10">
+                        </div>
+                        <div class="col-12 my-2 pt-2 text-center">
+                            {{pws_pwd}}<span id="copyIcon" (click)="copyToClipboardText()"><i class="far fa-copy ms-3 text-xs text-secondary"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer bg-white">
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-sm btn-primary" type="button" (click)="pwd(pws_chars.value)">Execute</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>

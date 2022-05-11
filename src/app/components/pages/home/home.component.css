@@ -1,0 +1,6 @@
+#copyIcon{
+    display:none;
+}
+#copyIcon.active{
+    display:inline-block ;
+}

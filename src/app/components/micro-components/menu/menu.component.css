@@ -1,0 +1,29 @@
+.navbar-toggler{
+    border:none;
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+.navbar .nav-item .nav-link{
+    font-weight: 700;
+}
+@media(max-width:991px){
+    .navbar .nav-item{
+        padding-top:.5rem;
+        padding-bottom:.5rem;
+    }
+    .navbar-brand {
+        margin-right: auto !important;
+        margin-left: auto !important;
+        letter-spacing: 2px;
+    }
+}
+
+@media(min-width:992px){
+    .navbar .nav-item{
+        padding-left:15px;
+        padding-right:15px;
+    }
+}

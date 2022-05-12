@@ -1,5 +1,12 @@
 #copyIcon{
     display:none;
+    cursor:pointer;
+}
+#copyIcon:hover{
+    opacity:.5;
+}
+#copyIcon:active{
+    opacity:.8;
 }
 #copyIcon.active{
     display:inline-block ;

@@ -43,7 +43,7 @@
                             <input type="number" class="form-control form-control-sm" id="pws_chars" name="pws_chars" #pws_chars value="10">
                         </div>
                         <div class="col-12 my-2 pt-2 text-center">
-                            {{pws_pwd}}<span id="copyIcon" (click)="copyToClipboardText()"><i class="far fa-copy ms-3 text-xs text-secondary"></i></span>
+                            {{pws_pwd}}<span id="copyIcon" (click)="copyToClipboardText()"><i class="far fa-copy ms-3 text-xs text-secondary"></i></span>&nbsp;
                         </div>
                     </div>
                 </div>
@@ -55,6 +55,28 @@
             </div>
         </div>
 
+
+        <div class="col-6 col-md-4 col-lg-4">
+            <div class="card rounded-10">
+                <div class="card-header bg-white">
+                    <h4 class="card-title">Generate Person</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div>{{namePerson}}&nbsp;</div>
+                            <div>{{numberPerson}}&nbsp;</div>
+                            <div>{{emailPerson}}&nbsp;</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer bg-white">
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-sm btn-primary" type="button" (click)="createNameRandom()">Execute</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 </div>
